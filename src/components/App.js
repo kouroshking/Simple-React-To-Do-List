@@ -35,7 +35,7 @@ const App = () => {
       return item.id !== id;
     });
     const newDoneTodos = todos.filter((item) => {
-      return item.id == id;
+      return item.id === id;
     });
     setTodos(newTodos);
     setDoneTasks([...donetasks, ...newDoneTodos]);

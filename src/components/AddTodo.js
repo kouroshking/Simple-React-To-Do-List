@@ -8,7 +8,7 @@ class AddTodo extends React.Component {
 
   addTask = (e) => {
     e.preventDefault();
-    if (this.state.title == "") {
+    if (this.state.title === "") {
       alert("cannot add without a title. please give your task a title!");
     } else {
       this.props.addTask(this.state);
